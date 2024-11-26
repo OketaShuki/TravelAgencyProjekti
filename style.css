@@ -46,3 +46,91 @@
     max-height: 20px;
     margin-left: 10px;
   }
+
+  
+/* Stilizimi i paragrafeve */
+.paragrafetdhemaps {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.teksti h1, .tekstidyte h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.teksti p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 15px 0;
+}
+
+.package-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.package-button:hover {
+  background-color: #ff4500;
+}
+
+/* Stilizimi i pershrimeve me foto */
+.pershkrimet-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 5%;
+  justify-content: space-around;
+}
+
+.row, .row1 {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+  width: 45%;
+  text-align: left;
+}
+
+.pershkrimi, .pershkrimi1 {
+  padding: 20px;
+}
+
+.pershkrimi img, .pershkrimi1 img {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.pershkrimi h4, .pershkrimi1 h4 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.paragrafi, .paragrafi1 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.butonii, .butoni1 {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.butonii:hover, .butoni1:hover {
+  background-color: #ff4500;
+}
