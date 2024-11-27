@@ -46,3 +46,124 @@
     max-height: 20px;
     margin-left: 10px;
   }
+ 
+  /* Stilizimi i main*/
+
+.login__form {
+  position: relative;
+}
+
+.wrapper-background {
+  margin: auto;
+  margin-bottom: auto;
+  background-color: rgb(232, 232, 232);
+  width: 100%; /* Full width of the parent element */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Center form within the div */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.wrapper {
+  width: auto;
+  background: white;
+  border: 2px solid black (255, 255 .2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 30px 40px;
+    
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #ff6600;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid darkslategray;
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: rgb(1, 0, 0);
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: whitesmoke;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  height: 45px;
+  background: rgb(44, 66, 133);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(255, 255, 255) (0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+} 
+
+.wrapper .register-link {
+  font-size: 14.5;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: black;
+}
+
+.register-link p a {
+  color: rgb(14, 8, 8);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
