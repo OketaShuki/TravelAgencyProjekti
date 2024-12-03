@@ -49,6 +49,32 @@
 
   /* Stilizimi i Main */
 
+
+  .paragrafet {
+    display: flex;
+    align-items: center;
+}
+  
+.paragrafet a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px; 
+    padding: 10px;
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif; 
+}
+  
+.paragrafet a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+  
+.social img {
+    max-height: 20px;
+    margin-left: 20px; 
+} 
+
+
   body, html {
     margin: 0;
     padding: 0;
@@ -87,6 +113,268 @@
 .container img {
     width: 100%; 
     height: 500px;
+}
+
+
+.container img {
+  width: 100%; 
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.text-overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1.2em; 
+}
+
+.container img {
+  width: 100%; 
+  height: 500px;
+}
+
+.pershkrimet-container{
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+}
+
+.row{
+  display: flex;
+}
+
+.pershkrimi{
+  flex-grow: 1;
+  max-width: 100%;
+  font-size: 35px;
+  justify-content: center;
+}
+
+
+.paragrafi{
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+.a{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.a img{
+  width: 30%;
+  display: inline;
+  padding: 10px 40px;
+}
+
+.a{
+  font-size: 15px;
+}
+
+.butonii{
+  background-color: rgb(102, 197, 102);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 5%;
+}
+
+.row1{
+  display: flex;
+}
+
+.pershkrimi1{
+  max-width: 100%;
+  font-size: 35px;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.paragrafi1{
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.a1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.a1 img{
+  width: 30%;
+  display: inline;
+  padding: 10px 40px;
+}
+
+.a1{
+  font-size: 15px;
+}
+
+.butoni1{
+  background-color: rgb(102, 197, 102);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 5%;
+}
+.box-container,
+.box-container2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.box,
+.box2 {
+width: 300px;
+border: 1px solid #ddd;
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img,
+.image2 img {
+width: 100%; 
+height: 200px; 
+object-fit: cover; 
+}
+.section-text {
+text-align: center;
+color: #ff4500; /* Use any color you prefer */
+font-size: 1.8em; /* Increase font size */
+font-weight: bold;
+margin: 40px 0; /* Add some vertical spacing */
+}
+
+.content,
+.content2 {
+padding: 20px;
+text-align: center;
+}
+
+.price,
+.price2 {
+margin-top: 10px;
+font-weight: bold;
+color: #333;
+}
+
+.btn,
+.btn2 {
+display: inline-block;
+padding: 10px;
+margin-top: 10px;
+background-color: #ff4500;
+color: #fff;
+text-decoration: none;
+border-radius: 3px;
+}
+
+.btn:hover,
+.btn2:hover {
+background-color: #ff4500;
+}
+
+.packages {
+  padding: 50px 0;
+}
+
+.box {
+  width: 300px;
+}
+.slider-container {
+position: relative;
+width: 100%; /* Make the slider full-width */
+max-width: 600px; /* Adjust the max width as needed */
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+margin: auto; /* Center align */
+aspect-ratio: 16/9; /* Maintain a consistent aspect ratio */
+}
+
+.slider {
+display: flex;
+transition: transform 0.4s ease;
+}
+
+.slide {
+min-width: 100%;
+position: relative;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures image covers the whole slide without distortion */
+border-radius: 10px;
+}
+
+/* Adjusting text on slider images */
+.slide-info {
+position: absolute;
+bottom: 50%; /* Move the text higher up to center vertically */
+left: 50%; /* Center horizontally */
+transform: translate(-50%, 50%); /* Center both vertically and horizontally */
+color: #fff;
+background-color: rgba(0, 0, 0, 0.6);
+padding: 5px 10px;
+border-radius: 5px;
+text-align: center; /* Center text alignment */
+width: 80%; /* Adjust width to fit the text more snugly */
+}
+
+.slide-info h3 {
+font-size: 1.2em; /* Make heading text smaller */
+margin-bottom: 0; /* Adjust as needed to reduce spacing */
+}
+
+.slide-info p {
+font-size: 0.9em; /* Smaller font size for paragraphs */
+margin: 5px 0; /* Adjust spacing around paragraphs */
+}
+
+
+button.prev, button.next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+border: none;
+color: white;
+padding: 8px 12px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 16px;
+}
+
+button.prev {
+left: 8px;
+}
+
+button.next {
+right: 8px;
 }
 
   
