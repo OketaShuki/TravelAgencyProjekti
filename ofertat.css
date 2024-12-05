@@ -55,16 +55,33 @@
   color: #ff4500;
 }
 
+
 /* Pjesa e paketave */
 .paketat-shqiperia,
 .paketat-dubai,
-.paketat-greqi {
+.paketat-greqi,
+.paketat-egypt,
+.paketat-turqi,
+.paketat-spanje,
+.paketat-angli,
+.paketat-itali,
+.paketat-zvicerr,
+.paketat-france,
+.paketat-amerike {
   margin-bottom: 40px;
 }
 
 #paketat-shqiperia h2,
 #paketat-dubai h2,
-#paketat-greqi h2 {
+#paketat-greqi h2,
+#paketat-egypt h2,
+#paketat-turqi h2,
+#paketat-spanje h2,
+#paketat-angli h2,
+#paketat-itali h2,
+#paketat-zvicerr h2 ,
+#paketat-france h2,
+#paketat-amerike h2 {
   font-size: 2em;
   color: #ff4500;
   margin-bottom: 20px;
