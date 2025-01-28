@@ -1,0 +1,100 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+h2 {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+th {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+}
+
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cc5200; 
+}
+
+
+td {
+    color: #333;
+}
+
+
+td:nth-child(1), th:nth-child(1) {
+    width: 5%;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    width: 15%;
+}
+
+td:nth-child(3), th:nth-child(3) {
+    width: 20%;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 15%;
+}
+
+td:nth-child(5), th:nth-child(5) {
+    width: 30%;
+}
+
+td:nth-child(6), th:nth-child(6) {
+    width: 15%;
+}
+
+
+table, h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+
+table.empty {
+    text-align: center;
+    font-style: italic;
+    color: #ff6600;
+    padding: 20px 0;
+}
