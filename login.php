@@ -9,17 +9,17 @@
 <body>
     <header class="headerContainer">
         <div class="logoand">
-            <a href="index.html"> 
+            <a href="index.php"> 
                 <img src="fototprojekt/LogoProjektit.png" alt="Logo">
             </a>
         </div>
         <div class="faqet">
-            <a href="index.html">Home</a>
-            <a href="rrethnesh.html">Rreth Nesh</a>
-            <a href="ofertat.html">Ofertat</a>
-            <a href="contactus.html">Kontakti</a>
-            <a href="shembull.html">Shembull</a>
-            <a href="login.html">Log in/Register</a>
+            <a href="index.php">Home</a>
+            <a href="rrethnesh.php">Rreth Nesh</a>
+            <a href="ofertat.php">Ofertat</a>
+            <a href="contactus.php">Kontakti</a>
+            <a href="shembull.php">Shembull</a>
+            <a href="login.php">Log in/Register</a>
         </div>
         <div class="socialmedias">
             <a href="https://www.facebook.com/" target="_blank"><img src="fototprojekt/ikonafacebook.png" alt="Facebook"></a>
@@ -42,7 +42,7 @@
                     
                     <div class="register-link">
                         <p>Don't have an account?
-                            <a href="register.html">Register</a></p>
+                            <a href="register.php">Register</a></p>
                     </div>
                 </form>
             </div>
@@ -62,12 +62,12 @@
         <div class="footer-nav">
             <h3 class="nav-titulli">Faqet</h3>
             <div class="nav-elements">
-                <a href="index.html">Home</a>
-                <a href="rrethnesh.html">Rreth Nesh</a>
-                <a href="ofertat.html">Ofertat</a>
-                <a href="contactus.html">Kontakti</a>
-                <a href="shembull.html">Shembull</a>
-                <a href="login.html">Log in/Register</a>
+                <a href="index.php">Home</a>
+                <a href="rrethnesh.php">Rreth Nesh</a>
+                <a href="ofertat.php">Ofertat</a>
+                <a href="contactus.php">Kontakti</a>
+                <a href="shembull.php">Shembull</a>
+                <a href="login.php">Log in/Register</a>
             </div>
         </div>
         <div class="footer-contact">

@@ -9,24 +9,53 @@
 <body>
     <header class="headerContainer">
         <div class="logoand">
-            <a href="index.html"> 
+            <a href="index.php"> 
                 <img src="fototprojekt/LogoProjektit.png" alt="Logo">
             </a>
         </div>
         <div class="faqet">
-            <a href="index.html">Home</a>
-            <a href="rrethnesh.html">Rreth Nesh</a>
-            <a href="ofertat.html">Ofertat</a>
-            <a href="contactus.html">Kontakti</a>
-            <a href="shembull.html">Shembull</a>
-            <a href="login.html">Log in/Register</a>
+            <a href="index.php">Home</a>
+            <a href="rrethnesh.php">Rreth Nesh</a>
+            <a href="ofertat.php">Ofertat</a>
+            <a href="contactus.php">Kontakti</a>
+            <a href="shembull.php">Shembull</a>
+            <a href="login.php">Log in/Register</a>
         </div>
         <div class="socialmedias">
             <a href="https://www.facebook.com/" target="_blank"><img src="fototprojekt/ikonafacebook.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="fototprojekt/ikonainstagramit.png" alt="Instagram"></a>
         </div>
     </header>
-</body>
+    <main>
+        <div class="contacttext">
+            <h2> DERGO MESAZH:</h2>
+            <br>
+            <p>
+                Kontakto njerin nga agjentet tane per informata me te detajuara:
+            </p>
+        </div>
+        <form id="myForm" class="contactus" onsubmit="return validateForm()">
+            <p class="contactp">Na Kontakto</p>
+            <br>
+            <div class="login">
+                <input type="text" placeholder="Emri" class="input" id="emri">
+                <input type="email" placeholder="Email" class="input" id="email">
+            </div>
+    
+            <div class="subject">
+                <input type="text" placeholder="Titulli" class="input" id="titulli">
+            </div>
+    
+            <div class="msg">
+                <textarea class="area" placeholder="Mesazhi" id="mesazhi"></textarea>
+            </div>
+    
+            <div>
+                <button type="submit" class="btn">Dergo Mesazhin</button>
+            </div>
+        </form>
+    </main>
+
 <footer>
     <div class="footer-div">
         <div class="travel-footer">
@@ -39,12 +68,12 @@
         <div class="footer-nav">
             <h3 class="nav-titulli">Faqet</h3>
             <div class="nav-elements">
-                <a href="index.html">Home</a>
-                <a href="rrethnesh.html">Rreth Nesh</a>
-                <a href="ofertat.html">Ofertat</a>
-                <a href="contactus.html">Kontakti</a>
-                <a href="shembull.html">Shembull</a>
-                <a href="login.html">Log in/Register</a>
+                <a href="index.php">Home</a>
+                <a href="rrethnesh.php">Rreth Nesh</a>
+                <a href="ofertat.php">Ofertat</a>
+                <a href="contactus.php">Kontakti</a>
+                <a href="shembull.php">Shembull</a>
+                <a href="login.php">Log in/Register</a>
             </div>
         </div>
         <div class="footer-contact">
@@ -58,4 +87,7 @@
     </div>
     <h5 class="footer-content">MAJESTIC TRAVEL All rights reserved</h5>
 </footer>
+
+<script src="contactus.js"></script>
+</body>
 </html>

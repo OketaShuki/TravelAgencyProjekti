@@ -9,17 +9,17 @@
 <body>
     <header class="headerContainer">
         <div class="logoand">
-            <a href="index.html"> 
+            <a href="index.php"> 
                 <img src="fototprojekt/LogoProjektit.png" alt="Logo">
             </a>
         </div>
         <div class="faqet">
-            <a href="index.html">Home</a>
-            <a href="rrethnesh.html">Rreth Nesh</a>
-            <a href="ofertat.html">Ofertat</a>
-            <a href="contactus.html">Kontakti</a>
-            <a href="shembull.html">Shembull</a>
-            <a href="login.html">Log in/Register</a>
+            <a href="index.php">Home</a>
+            <a href="rrethnesh.php">Rreth Nesh</a>
+            <a href="ofertat.php">Ofertat</a>
+            <a href="contactus.php">Kontakti</a>
+            <a href="shembull.php">Shembull</a>
+            <a href="login.php">Log in/Register</a>
         </div>
         <div class="socialmedias">
             <a href="https://www.facebook.com/" target="_blank"><img src="fototprojekt/ikonafacebook.png" alt="Facebook"></a>
@@ -49,7 +49,7 @@
                         </p>
                     </div>
                     <div class="a">
-                        <a href="contactus.html" class="butonii">Na kontakto</a>
+                        <a href="contactus.php" class="butonii">Na kontakto</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                         </p>
                     </div>
                     <div class="a1">
-                        <a href="contactus.html" class="butoni1">Na kontakto</a>
+                        <a href="contactus.php" class="butoni1">Na kontakto</a>
                     </div>
                 </div>
                 <div class="pershkrimi1">
@@ -89,7 +89,7 @@
                     <br>
                 </div>
                 <div class="butoni">
-                    <a href="ofertat.html" class="package-button">Shiko ofertat tona</a>
+                    <a href="ofertat.php" class="package-button">Shiko ofertat tona</a>
                 </div>
         </div>
 
@@ -137,12 +137,12 @@
                 <div class="footer-nav">
                     <h3 class="nav-titulli">Faqet</h3>
                     <div class="nav-elements">
-                        <a href="index.html">Home</a>
-                        <a href="rrethnesh.html">Rreth Nesh</a>
-                        <a href="ofertat.html">Ofertat</a>
-                        <a href="contactus.html">Kontakti</a>
-                        <a href="shembull.html">Shembull</a>
-                        <a href="login.html">Log in/Register</a>
+                        <a href="index.php">Home</a>
+                        <a href="rrethnesh.php">Rreth Nesh</a>
+                        <a href="ofertat.php">Ofertat</a>
+                        <a href="contactus.php">Kontakti</a>
+                        <a href="shembull.php">Shembull</a>
+                        <a href="login.php">Log in/Register</a>
                     </div>
                 </div>
                 <div class="footer-contact">

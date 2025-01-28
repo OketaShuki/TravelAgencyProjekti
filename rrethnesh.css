@@ -427,12 +427,21 @@ right: 8px;
   padding-bottom: 5px;
   font-family: sans-serif;
   font-variant: small-caps;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
 }
 
 .nav-elements {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
   gap: 5px; 
 }
 
@@ -451,8 +460,11 @@ right: 8px;
 .footer-contact{
   line-height: 1.8em;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
 }
 
 .footer-contact>p, .fcontact-a>a{

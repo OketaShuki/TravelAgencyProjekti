@@ -46,8 +46,104 @@
     max-height: 20px;
     margin-left: 10px;
   }
+  /*Stilizimi i Main*/
+  .package-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
 
-  
+.package-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.detail {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3); /* Orange shadow */
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
+  flex-grow: 1;
+  transition: transform 0.3s ease; 
+}
+a.detail {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Keeps the text color consistent */
+}
+
+
+
+.detail:hover {
+  transform: scale(1.05); /* Slightly scales up on hover */
+  box-shadow: #ff4500 /* Darker orange shadow on hover */
+}
+
+.contact-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Optional padding for spacing */
+}
+
+
+
+.contact-box {
+    width: 150px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-box span {
+    font-size: 0.9rem;
+    color: #777;
+}
+.detail {
+  position: relative; /* Allows positioning of the image */
+  padding-left: 50px; /* Add padding to the left for image space */
+}
+
+.detail-image {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  top: 30px; /* Adjust as needed */
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+  /* end of main styling*/
+
+
 /*Stilizimi i footer */
 .footer-content{
   font-family: sans-serif;
@@ -97,12 +193,21 @@
   padding-bottom: 5px;
   font-family: sans-serif;
   font-variant: small-caps;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
 }
 
 .nav-elements {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
   gap: 5px; 
 }
 
@@ -121,8 +226,11 @@
 .footer-contact{
   line-height: 1.8em;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
 }
 
 .footer-contact>p, .fcontact-a>a{
