@@ -250,3 +250,35 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
   margin-top: 50px;
 }
+
+/* responsiviteti i footer */
+
+@media (max-width: 750px) {
+  .footer-div {
+    flex-direction: column; /* Kalon në kolonë */
+    align-items: flex-start; /* Vendos elementët në të majtë */
+    padding: 20px; /* Hapësirë nga skajet */
+    gap: 20px; /* Hapësirë ndërmjet elementëve */
+  }
+
+  .travel-footer, .footer-nav, .footer-contact {
+    width: 100%; /* Mbulojnë gjerësinë e ekranit */
+    margin-bottom: 15px; /* Hapësirë poshtë çdo seksioni */
+  }
+
+  .travel-footer p, .footer-contact p, .nav-elements a {
+    text-align: left; /* Teksti i vendosur në të majtë */
+  }
+
+  .nav-elements {
+    display: flex;
+    flex-direction: column; /* Elementët në kolonë për të qëndruar njëra poshtë tjetrës */
+    align-items: flex-start; /* Teksti i vendosur në të majtë */
+    
+  }
+  .nav-titulli{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+}

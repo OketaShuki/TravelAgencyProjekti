@@ -31,57 +31,57 @@
         <h2>Disa nga vendet me te vizituara nga klientet tane :</h2>
         
         <div class="details">
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Shqipëri</h3>
                 <img src="fototprojekt/albaniaflag.png" alt="" class="detail-image">
                 <p>Eksploroni ofertat tona fantastike për Shqipëri</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Dubai</h3>
                 <img src="fototprojekt/dubaiflag.jpg" alt="" class="detail-image">
                 <p>Përjetoni luksin e Dubait me paketat tona!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Greqi</h3>
                 <img src="fototprojekt/greeceflag.jpeg" alt="" class="detail-image">
                 <p>Zbuloni aventurat tona për Greqi!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Hurghada</h3>
                 <img src="fototprojekt/hurghadaflag.jpeg" alt="" class="detail-image">
                 <p>Shijoni magjinë e Hurghadës me ofertat tona!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Turqi</h3>
                 <img src="fototprojekt/turkeyflag.webp" alt="" class="detail-image">
                 <p>Relaksohuni dhe kënaquni në Turqi me ne!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Spanjë</h3>
                 <img src="fototprojekt/spainflag.jpeg" alt="" class="detail-image">
                 <p>Zbuloni bukuritë e Spanjës me paketat tona!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Angli</h3>
                 <img src="fototprojekt/ukflag.jpg" alt="" class="detail-image">
                 <p>Eksploroni kulturën unike të Anglisë me ne!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Itali</h3>
                 <img src="fototprojekt/italiflag.png" alt="" class="detail-image">
                 <p>Shijoni udhëtimin tuaj në Itali me ofertat tona!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Zvicërr</h3>
                 <img src="fototprojekt/swissflag.webp" alt="" class="detail-image">
                 <p>Përjetoni peisazhet e mrekullueshme të Zvicrës!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Francë</h3>
                 <img src="fototprojekt/franceflag.png" alt="" class="detail-image">
                 <p>Zbuloni magjinë e Francës me paketat tona të veçanta!</p>
             </a>
-            <a href="ofertat.html" class="detail">
+            <a href="ofertat.php" class="detail">
                 <h3>Shtetet e Bashkuara të Amerikës</h3>
                 <img src="fototprojekt/unitedstatesflag.png" alt="" class="detail-image">
                 <p>Nisni një aventurë të paharrueshme në Amerikë me ne!</p>
