@@ -5,27 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majestic Travel Agency</title>
     <link rel="stylesheet" href="shembull.css">
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </head>
 <body>
-    <header class="headerContainer">
-        <div class="logoand">
-            <a href="index.php"> 
-                <img src="fototprojekt/LogoProjektit.png" alt="Logo">
-            </a>
-        </div>
-        <div class="faqet">
-            <a href="index.php">Home</a>
-            <a href="rrethnesh.php">Rreth Nesh</a>
-            <a href="ofertat.php">Ofertat</a>
-            <a href="contactus.php">Kontakti</a>
-            <a href="shembull.php">Shembull</a>
-            <a href="login.php">Log in/Register</a>
-        </div>
-        <div class="socialmedias">
-            <a href="https://www.facebook.com/" target="_blank"><img src="fototprojekt/ikonafacebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="fototprojekt/ikonainstagramit.png" alt="Instagram"></a>
-        </div>
-    </header>
+<nav>
+    <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><img src="fototprojekt/close.png" alt="close" height="26" width="26"></a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="rrethnesh.php">Rrethnesh</a></li>
+        <li><a href="ofertat.php">Ofertat</a></li>
+        <li><a href="contactus.php">Kontakti</a></li>
+        <li><a href="shembull.php">Shembull</a></li>
+        <li><a href="login.php">Login</a></li>
+    </ul> 
+    <ul>
+        <li class=""><a class="logo-1" href="index.php"><img src="fototprojekt/LogoProjektit.png" alt="LogoProjektit" height="80" width="80"></a></li>
+        <li class="hideOnMobile"><a href="index.php">Home</a></li>
+        <li class="hideOnMobile"><a href="rrethnesh.php">Rrethnesh</a></li>
+        <li class="hideOnMobile"><a href="ofertat.php">Ofertat</a></li>
+        <li class="hideOnMobile"><a href="contactus.php">Kontakti</a></li>
+        <li class="hideOnMobile"><a href="shembull.php">Shembull</a></li>
+        <li class="hideOnMobile"><a href="login.php">Login</a></li>
+        <li onclick=showSidebar()><a class="menu-button" href="#"><img src="fototprojekt/threebars.png" alt="threebars"></a></li>
+    </ul>
+</nav>
     <!-- Package Details Section -->
     <section class="package-details">
         <h2>Disa nga vendet me te vizituara nga klientet tane :</h2>
