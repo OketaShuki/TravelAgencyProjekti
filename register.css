@@ -1,384 +1,340 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /*Stilimi i Headerit */
-  nav{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    height: 80px;
-  }
-  nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav li{
-    height: 80px;
-  }
-  
-  nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-  nav a:hover{
-    background-color: orange;
-  }
-  nav li:first-child{
-    margin-right: auto;
-    padding: 0%;
-  }
-  
-  nav li:last-child {
-    display: flex;
-    align-items: center;
-    height: 50px;
-  }
-  nav li:last-child img {
-    height: 30px;
-    width: 30px;
-    padding: 10px;
-  }
-  
-  nav li:last-child a:hover {
-    background-color: orange;
-  }
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .sidebar li{
-    width: 100%;
-  }
-  .sidebar a{
-    width: 100%;
-  }
-  .menu-button{
-    display: none;
-  }
-  @media (max-width: 800px) {
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button {
-        display: block;
-    }
-  }
-  @media (max-width: 400px) {
-    .sidebar{
-        width: 100%;
-    }
-  }
-  /* end of header */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
-  
-  /* Stilizimi i main  */
+body {
+  background-color: wheat; /* background color of register */
+  color: #333;
+  line-height: 1.6;
+}
 
-  .wrapper-background {
-    margin: auto;
-    margin-bottom: auto;
-    background-color: #f9f9f9;
-    width: 100%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-  
-  
-  }
-  
-  .wrapper3 {
-      width: auto;
-      background-color: rgb(255, 255, 255);
-      color: whitesmoke;
-      border-radius: 30px;
-      padding: 30px 40px;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  } 
-  
-  
-  .wrapper3 h1 {
-      color: #ff6600;
-      font-size: 36px;
-      text-align: center;
-  }
-  
-  .wrapper3 .input-box3 {
-      background-color: white(142, 27, 27);
-      border-radius: 30px;
-      color: black;
-      position: relative;
-      width: 100%;
-      height: 50px;
-      margin: 30px 0;
-  }
-  
-  .input-box3 input {
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      outline: none;
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 40px;
-      font-size: 16px;
-      color: rgb(0, 0, 0);
-      padding: 20px 20px 20px 20px;
-  }
-  
-  .input-box3 input {
-      color: rgb(0, 0, 0);
-  }
-  
-  .input-box3 i {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      font-size: 20px;
-  } 
-  
-  .wrapper3 .btn3 {
-      width: 50%;
-      position: relative;
-      left: 25%;
-      height: 45px;
-      background: rgb(44, 66, 133);
-      color: #f9f9f9;
-      border: none;
-      border-radius: 45px;
-      box-shadow: 0 0 10px darkslategray (0, 0, 0, .1);
-      cursor: pointer;
-      font-size: 16px;
-  }
-  
-  .wrapper3 .back-to-login {
-      font-size: 14.5;
-      text-align: center;
-      margin: 20px 0 15px;
-      color: black;
-  }
-  
-  .back-to-login p a{
-      color: rgb(14, 8, 8);
-      text-decoration: none;
-      font-weight: 600;
-  }
-  
-  .input-box3 input::placeholder {
-      color: rgb(31, 24, 24);
-  }
+/* Header styling */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
+.headerContainer a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin: 0 15px;
+}
+
+.headerContainer a:hover {
+  color: #ff6600;
+}
+
+
+  .logoand img {
+    width: 120px;
+    height: auto; 
+    margin-right: 15px;
+}
+
+.socialmedias img {
+  max-height: 20px;
+  margin-left: 10px;
+}
+/*             heAader                        */
+
+.body3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(img.16.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
   
-/*Stilizimi i footer */
-.footer-content{
-  font-family: sans-serif;
-  font-weight: 300;
+}
+
+.wrapper3 {
+  width: 420px;
+  background: transparent;
+  background-color: rgb(255, 255, 255);
+  color: whitesmoke;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 30px 40px;
+  margin: auto;
+} 
+
+
+.wrapper3 h1 {
+  color: #ff6600;
+  font-size: 36px;
   text-align: center;
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
+}
+
+.wrapper3 .input-box3 {
+  background-color: white(142, 27, 27);
+  border-radius: 30px;
+  color: black;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box3 input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgb(166, 47, 47);
+  padding: 20px 20px 20px 20px;
+}
+
+.input-box3 input {
+  color: rgb(226, 24, 24);
+}
+
+.input-box3 i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 20px;
+} 
+
+.wrapper3 .btn3 {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  height: 45px;
+  background: rgb(44, 66, 133);
+  color: #f9f9f9;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 0 10px darkslategray (0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.wrapper3 .back-to-login {
+  font-size: 14.5;
+  text-align: center;
+  margin: 20px 0 15px;
+  color: black;
+}
+
+.back-to-login p a{
+  color: rgb(14, 8, 8);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.input-box3 input::placeholder {
+  color: rgb(31, 24, 24);
+}
+/* Role Selection Section */
+.roles {
+margin-top: 20px;
+text-align: center;
+}
+
+.roles p {
+font-size: 18px;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+
+.role-option {
+margin: 10px 0;
+display: inline-block;
+}
+
+.roles input[type="radio"] {
+margin-right: 10px;
+cursor: pointer;
+width: 20px;
+height: 20px;
+}
+
+/* Make sure labels are visible and styled properly */
+.roles label {
+font-size: 16px;
+cursor: pointer;
+color: #333;
+font-weight: normal;
+margin-left: 5px;
+}
+
+/* Add hover effect */
+.roles label:hover {
+color: #ff6600;
+}
+
+/* Style for checked radio button */
+.roles input[type="radio"]:checked + label {
+font-weight: bold;
+color: #ff6600;
+}
+
+.roles label p {
+display: inline;
+color: #333;
+font-size: 16px;
+margin: 0;
+}
+
+
+/*     footer css  ====================================*/
+
+.footer-content{
+font-family: sans-serif;
+font-weight: 300;
+text-align: center;
+color: white;
+padding-top: 30px;
+padding-bottom: 20px;
 }
 
 .footer-div{
-  border-top: solid 1px rgba(255, 255, 255, 0.508);
-  padding-top: 40px;
-  color: rgb(201, 201, 201);
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-  justify-content: space-evenly;
+border-top: solid 1px rgba(255, 255, 255, 0.508);
+padding-top: 40px;
+color: rgb(201, 201, 201);
+display: flex;
+flex-direction: row;
+padding-left: 20px;
+justify-content: space-evenly;
 }
 
 .travel-footer{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-style: italic;
-  color:  rgb(162, 162, 162);
+position: relative;
+display: flex;
+flex-direction: column;
+text-align: left;
+font-style: italic;
+color:  rgb(162, 162, 162);
 }
 
 .travel-titulli{
-  padding-bottom: 5px;
-  font-style: normal;
-  color: #ff4500;
-  font-family: sans-serif;
-  font-variant: small-caps;
+padding-bottom: 5px;
+font-style: normal;
+color: #ff4500;
+font-family: sans-serif;
+font-variant: small-caps;
 }
 
 .footer-nav{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+position: relative;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 
 .nav-titulli{
-  color: #ff4500;
-  padding-bottom: 5px;
-  font-family: sans-serif;
-  font-variant: small-caps;
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
+color: #ff4500;
+padding-bottom: 5px;
+font-family: sans-serif;
+font-variant: small-caps;
 }
 
-.nav-elements {
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
-  gap: 5px; 
+.nav-elements{
+width: auto;
+cursor: pointer;
+font-family: sans-serif;
 }
 
-.nav-elements a {
-  line-height: 1.8em;
-  text-decoration: none;
-  color: rgb(162, 162, 162);
-  font-family: sans-serif;
+.nav-elements :hover{
+color: #ff4500;
 }
 
-.nav-elements a:hover {
-  color: #ff4500;
+.nav-elements>a{
+line-height: 1.8em;
+text-decoration: none;
+color: rgb(162, 162, 162);
 }
-
 
 .footer-contact{
-  line-height: 1.8em;
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
+line-height: 1.8em;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 
 .footer-contact>p, .fcontact-a>a{
-  color:  rgb(162, 162, 162);
+color:  rgb(162, 162, 162);
 }
 
 .fcontact-a{
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .fcontact-a :hover{
-  color: #ff4500;
+color: #ff4500;
 }
 
 footer{
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
-  margin-top: 50px;
+box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
+margin-top: 50px;
 }
-@media (max-width: 750px) {
-  .pershkrimet-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 5%;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .pershkrimi, .pershkrimi1 {
-    width: 100%; /* Siguron që elementi mbulon gjithë gjerësinë e ekranit */
-    padding: 15px; /* Hapësirë anash për të dhënë estetikë */
-    box-sizing: border-box; /* Përfshin padding brenda gjerësisë */
-    text-align: center; /* Qendron përmbajtjen për pajisje të vogla */
-  }
+/* Desktop */
+@media (min-width: 1024px) {
+.headerContainer {
+  padding: 20px 15%;
+}
 
-  .pershkrimi img, .pershkrimi1 img {
-    width: 100%; /* Siguron që imazhi përshtatet në ekran */
-    height: auto; /* Ruaj raportin e aspektit të imazhit */
-  }
+.mySlides img {
+  height: 700px;
+}
 
-  .row, .row1 {
-    width: 100%; /* Mbulo gjithë ekranin për çdo rresht */
-    margin: 10px 0; /* Hapësirë midis rreshtave */
-  }
-  .slideshow-container {
-    max-width: 100%;
-    height: 300px; /* Redukto lartësinë e sliderit për pajisjet më të vogla */
-    overflow: hidden;
-  }
+.row, .row1 {
+  width: 45%;
+}
 
-  .mySlides img {
+.footer-div {
+  flex-direction: row; 
+  justify-content: space-between;
+  padding: 40px 5%; 
+}
+
+.footer-contact, .footer-nav, .travel-footer {
+  text-align: center; 
+  width: 30%; 
+}
+
+.footer-nav .nav-elements,
+.footer-contact .fcontact-a {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.nav-elements a, .fcontact-a a {
+  text-align: center; 
+}
+}
+
+@media (max-width: 800px) {
+.hideOnMobile{
+    display: none;
+}
+.menu-button {
+    display: block;
+}
+}
+@media (max-width: 400px) {
+.sidebar{
     width: 100%;
-    height: 300px; /* Për të ruajtur lartësinë e sliderit gjatë responsivitetit */
-    object-fit: cover; /* Siguro që imazhi të mbulojë zonën e sliderit pa humbur përpjesëtimet */
-  }
-
-  .text {
-    font-size: 1.2rem; /* Redukto madhësinë e tekstit për ekranet e vogla */
-  }
-
-  .prev, .next {
-    font-size: 18px; /* Redukto madhësinë e butonave për navigim */
-    padding: 10px;
-  }
-
-  .dot {
-    height: 10px; /* Redukto madhësinë e pikave */
-    width: 10px;
-  }
 }
-@media (max-width: 750px) {
-  .footer-div {
-    flex-direction: column; /* Kalon në kolonë */
-    align-items: flex-start; /* Vendos elementët në të majtë */
-    padding: 20px; /* Hapësirë nga skajet */
-    gap: 20px; /* Hapësirë ndërmjet elementëve */
-  }
-
-  .travel-footer, .footer-nav, .footer-contact {
-    width: 100%; /* Mbulojnë gjerësinë e ekranit */
-    margin-bottom: 15px; /* Hapësirë poshtë çdo seksioni */
-  }
-
-  .travel-footer p, .footer-contact p, .nav-elements a {
-    text-align: left; /* Teksti i vendosur në të majtë */
-  }
-
-  .nav-elements {
-    display: flex;
-    flex-direction: column; /* Elementët në kolonë për të qëndruar njëra poshtë tjetrës */
-    align-items: flex-start; /* Teksti i vendosur në të majtë */
-    
-  }
-  .nav-titulli{
-    display: flex;
-    justify-content: flex-start;
-
-  }
 }
-
