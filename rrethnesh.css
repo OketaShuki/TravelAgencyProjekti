@@ -178,16 +178,6 @@
   color: white;
   text-align: center;
 }
-
-.text-overlay h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.text-overlay p {
-  font-size: 1.2em; 
-}
-
 .container img {
   width: 100%; 
   height: 500px;
@@ -536,7 +526,7 @@ footer{
 
 /* responsiviteti i footer */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .footer-div {
     flex-direction: column; /* Kalon në kolonë */
     align-items: flex-start; /* Vendos elementët në të majtë */
@@ -564,4 +554,66 @@ footer{
     justify-content: flex-start;
 
   }
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+  .container {
+    width: 100%; /* Shrinks container proportionally */
+}
+  .container img {
+    width: 100%;
+    height: 100vh; /* Make image cover full height */
+    object-fit: cover; /* Ensures image covers without distortion */
+  }
+  .text-overlay {
+    font-size: 4vw; /* Increases relative font size for readability */
+    padding: 1.5vw 3vw;
+    width: 80%;
+  }
+
+  .text-overlay h1 {
+    font-size: 2.0rem; /* Make text smaller for better fit */
+}
+.text-overlay p {
+    font-size: 1.2rem; /* Reduce paragraph size proportionally */
+}
+h2{
+  font-size: 1.7rem;
+}
+.section-text {
+  text-align: center;
+  color: #ff4500; /* Use any color you prefer */
+  font-size: 1.8rem; /* Increase font size */
+  font-weight: bold;
+  margin: 40px 0; /* Add some vertical spacing */
+  }
+}
+@media (max-width:607) {
+  .text-overlay {
+    font-size: 4vw; /* Increases relative font size for readability */
+    padding: 1.5vw 3vw;
+    width: 80%;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.7rem; /* Make text smaller for better fit */
+}
+.text-overlay p {
+    font-size: 1rem; /* Reduce paragraph size proportionally */
+}
+}
+@media (max-width: 487px) {
+  .text-overlay {
+    font-size: 4vw; /* Increases relative font size for readability */
+    padding: 1.5vw 3vw;
+    width: 80%;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.2rem; /* Make text smaller for better fit */
+}
+
+.text-overlay p {
+    font-size: 0.9rem; /* Reduce paragraph size proportionally */
+}
 }
