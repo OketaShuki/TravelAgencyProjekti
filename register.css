@@ -376,14 +376,14 @@ margin-top: 50px;
 
 @media (max-width: 800px) {
 .hideOnMobile{
-    display: none;
+  display: none;
 }
 .menu-button {
-    display: block;
+  display: block;
 }
 }
 @media (max-width: 400px) {
 .sidebar{
-    width: 100%;
+  width: 100%;
 }
 }

@@ -361,7 +361,7 @@ footer{
   margin-top: 50px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .pershkrimet-container {
     display: flex;
     flex-direction: column;
@@ -412,7 +412,7 @@ footer{
     width: 10px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .footer-div {
     flex-direction: column; /* Kalon në kolonë */
     align-items: flex-start; /* Vendos elementët në të majtë */
