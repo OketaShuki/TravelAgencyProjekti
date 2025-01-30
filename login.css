@@ -192,7 +192,7 @@
   height: 20px;
 }
 
-/* Make sure labels are visible and styled properly */
+
 .roles label {
   font-size: 16px;
   cursor: pointer;
@@ -201,12 +201,11 @@
   margin-left: 5px;
 }
 
-/* Add hover effect */
+
 .roles label:hover {
   color: #ff6600;
 }
 
-/* Style for checked radio button */
 .roles input[type="radio"]:checked + label {
   font-weight: bold;
   color: #ff6600;
@@ -328,30 +327,30 @@ footer{
   }
 
   .footer-div {
-    flex-direction: row; /* Horizontal layout */
-    justify-content: space-between; /* Space sections evenly */
-    padding: 40px 5%; /* Add spacing and padding */
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 40px 5%; 
   }
 
   .footer-contact, .footer-nav, .travel-footer {
-    text-align: center; /* Center align footer text */
-    width: 30%; /* Limit width of each section to allow spacing */
+    text-align: center; 
+    width: 30%; 
   }
 
   .footer-nav .nav-elements,
   .footer-contact .fcontact-a {
     display: flex;
-    flex-direction: column; /* Stack the items vertically */
-    align-items: center; /* Center align the links */
-    gap: 10px; /* Add some space between each link/contact */
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
   }
 
   .nav-elements a, .fcontact-a a {
-    text-align: center; /* Ensure the links are centered */
+    text-align: center; 
   }
 }
 
-/* Tablet and smaller devices */
+
 @media (max-width: 1023px) {
   .headerContainer {
       flex-direction: column;
@@ -377,7 +376,7 @@ footer{
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .headerContainer {
       flex-direction: column;

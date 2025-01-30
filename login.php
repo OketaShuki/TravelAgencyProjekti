@@ -1,38 +1,34 @@
 <?php
 session_start();
-include 'DatabaseConnection.php'; // Include your DatabaseConnection class file
+include 'DatabaseConnection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get username, password, and role from POST
+   
     $username = $_POST['username'];
     $password = $_POST['password'];
     $role = $_POST['role'];
 
-    // Create a new instance of the DatabaseConnection class
+    
     $db = new DatabaseConnection();
-    $conn = $db->startConnection(); // Call startConnection to get the PDO connection
+    $conn = $db->startConnection(); 
 
-    // Prepare and execute a query to check the user credentials
     $stmt = $conn->prepare("SELECT id, username, password, role FROM users WHERE username = :username AND role = :role");
     $stmt->bindParam(':username', $username);
     $stmt->bindParam(':role', $role);
     $stmt->execute();
 
-    // Check if a user was found
+   
     if ($stmt->rowCount() > 0) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        // Verify the password
-        if (password_verify($password, $user['password'])) { // Assuming passwords are hashed
-            // ✅ Store user information in session
-            $_SESSION['user_id'] = $user['id'];  // Store user ID ✅
+        
+        if (password_verify($password, $user['password'])) { 
+           
+            $_SESSION['user_id'] = $user['id']; 
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
 
-            // ✅ Debugging (remove after testing)
-            // echo "User ID set: " . $_SESSION['user_id'];
-
-            // Redirect based on role
+            
             header("Location: index.php");
             exit;
         } else {
