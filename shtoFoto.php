@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="shtoFoto.css">
     <title>Shto nje Feedback</title>
 </head>
-<body>
+<body>sh
 
     <h2>Shto një review nga pushimet tuaja me agjencinë tonë:</h2>
     
