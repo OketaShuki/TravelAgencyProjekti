@@ -26,6 +26,10 @@
         <li><a href="contactus.php">Kontakti</a></li>
         <li><a href="shembull.php">Shembull</a></li>
         <li><a href="login.php">Login</a></li>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+        <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
+        <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
+        <?php endif; ?>
     </ul> 
     <ul>
         <li class=""><a class="logo-1" href="index.php"><img src="fototprojekt/LogoProjektit.png" alt="LogoProjektit" height="80" width="80"></a></li>
@@ -35,7 +39,11 @@
         <li class="hideOnMobile"><a href="contactus.php">Kontakti</a></li>
         <li class="hideOnMobile"><a href="shembull.php">Shembull</a></li>
         <li class="hideOnMobile"><a href="login.php">Login</a></li>
-        <li onclick=showSidebar()><a class="menu-button" href="#"><img src="fototprojekt/threebars.png" alt="threebars"></a></li>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+        <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
+        <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
+        <?php endif; ?>
+        <li onclick=showSidebar()><a class="menu-button" href="#"><img src="fototprojekt/threebars.png" alt="threebars" height="80" width="80"></a></li>
     </ul>
 </nav>
     <!-- Package Details Section -->
