@@ -39,6 +39,11 @@
     </ul>
 </nav>
     <main>
+    <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
+        <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
+        <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
+        <?php endif; ?>
+        </div>
         
         <div class="pershkrimet-container">
             <div class="row">
