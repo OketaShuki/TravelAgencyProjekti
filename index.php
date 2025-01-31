@@ -29,6 +29,7 @@ session_start();
         <li><a href="contactus.php">Kontakti</a></li>
         <li><a href="shembull.php">Shembull</a></li>
         <li><a href="login.php">Login</a></li>
+        <li><a href="feedback.php">Feedback</a></li>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
         <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
         <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
@@ -40,7 +41,7 @@ session_start();
         <li class="hideOnMobile"><a href="rrethnesh.php">Rrethnesh</a></li>
         <li class="hideOnMobile"><a href="ofertat.php">Ofertat</a></li>
         <li class="hideOnMobile"><a href="contactus.php">Kontakti</a></li>
-        <li class="hideOnMobile"><a href="shembull.php">Shembull</a></li>
+        <li class="hideOnMobile"><a href="shembull.php">Destinacionet</a></li>
         <li class="hideOnMobile"><a href="login.php">Login</a></li>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
         <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
