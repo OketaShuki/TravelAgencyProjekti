@@ -6,45 +6,95 @@
 }
   
   body {
-    background-color: wheat;
+    background-color: white;
     color: #333;
     line-height: 1.6;
   }
   
   /* Header styling */
-  .headerContainer {
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 80px;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 20px 5%;
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  nav li{
+    height: 80px;
   }
   
-  .headerContainer a {
+  nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: orange;
+  }
+  nav li:first-child{
+    margin-right: auto;
+    padding: 0%;
   }
   
-  .headerContainer a:hover {
-    color: #ff6600;
+  nav li:last-child {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  nav li:last-child img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
   }
   
-  
-    .logoand img {
-      width: 120px;
-      height: auto; 
-      margin-right: 15px;
+  nav li:last-child a:hover {
+    background-color: orange;
   }
-  
-  .socialmedias img {
-    max-height: 20px;
-    margin-left: 10px;
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+  }
+  @media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
   }
 
   /* login section */
@@ -68,9 +118,9 @@
     background: white;
     border: 2px solid black (255, 255 .2);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px rgb(0, 0, 0) (0, 0, 0, .2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 30px 40px;
     margin: auto;
 }
@@ -269,12 +319,24 @@
   padding-bottom: 5px;
   font-family: sans-serif;
   font-variant: small-caps;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
 .nav-elements{
   width: auto;
   cursor: pointer;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
 .nav-elements :hover{
@@ -291,7 +353,10 @@
   line-height: 1.8em;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
 .footer-contact>p, .fcontact-a>a{
@@ -313,101 +378,46 @@ footer{
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
-  .headerContainer {
-    padding: 20px 15%;
+@media (max-width: 800px) {
+  .hideOnMobile{
+    display: none;
   }
-
-  .mySlides img {
-    height: 700px;
+  .menu-button {
+    display: block;
   }
-
-  .row, .row1 {
-    width: 45%;
   }
-
-  .footer-div {
-    flex-direction: row; 
-    justify-content: space-between; 
-    padding: 40px 5%; 
+  @media (max-width: 800px) {
+    .footer-div {
+      flex-direction: column; /* Kalon në kolonë */
+      align-items: flex-start; /* Vendos elementët në të majtë */
+      padding: 20px; /* Hapësirë nga skajet */
+      gap: 20px; /* Hapësirë ndërmjet elementëve */
+    }
+  
+    .travel-footer, .footer-nav, .footer-contact {
+      width: 100%; /* Mbulojnë gjerësinë e ekranit */
+      margin-bottom: 15px; /* Hapësirë poshtë çdo seksioni */
+    }
+  
+    .travel-footer p, .footer-contact p, .nav-elements a {
+      text-align: left; /* Teksti i vendosur në të majtë */
+    }
+  
+    .nav-elements {
+      display: flex;
+      flex-direction: column; /* Elementët në kolonë për të qëndruar njëra poshtë tjetrës */
+      align-items: flex-start; /* Teksti i vendosur në të majtë */
+      
+    }
+    .nav-titulli{
+      display: flex;
+      justify-content: flex-start;
+  
+    }
   }
-
-  .footer-contact, .footer-nav, .travel-footer {
-    text-align: center; 
-    width: 30%; 
+  
+  @media (max-width: 400px) {
+  .sidebar{
+    width: 100%;
   }
-
-  .footer-nav .nav-elements,
-  .footer-contact .fcontact-a {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 10px; 
   }
-
-  .nav-elements a, .fcontact-a a {
-    text-align: center; 
-  }
-}
-
-
-@media (max-width: 1023px) {
-  .headerContainer {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-  }
-
-  .footer-div {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px 10%;
-  }
-
-  .footer-contact p,
-  .fcontact-a > a,
-  .footer-nav a {
-      font-size: 0.9rem;
-  }
-
-  .footer-contact, .footer-nav, .travel-footer {
-      width: 100%;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .headerContainer {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-  }
-
-  .footer-div {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px 10%;
-  }
-
-  .footer-contact p,
-  .fcontact-a > a,
-  .footer-nav a {
-      font-size: 0.8rem;
-  }
-
-  .footer-contact, .footer-nav, .travel-footer {
-      width: 100%;
-      text-align: center;
-  }
-
-  .wrapper {
-      width: 100%;
-      padding: 20px;
-  }
-
-  .wrapper h1 {
-      font-size: 28px;
-  }
-}

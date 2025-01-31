@@ -617,3 +617,13 @@ h2{
     font-size: 0.9rem; /* Reduce paragraph size proportionally */
 }
 }
+@media (min-width:1000px){
+  .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}

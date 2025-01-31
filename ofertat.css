@@ -334,3 +334,13 @@ footer{
 
   }
 }
+@media (min-width:1000px){
+  .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
