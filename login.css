@@ -11,7 +11,8 @@
     line-height: 1.6;
   }
   
-  /* Header styling */
+  
+  /*Stilimi i Headerit */
   nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -23,7 +24,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   nav li{
     height: 80px;
@@ -88,7 +88,7 @@
         display: none;
     }
     .menu-button {
-        display: block;
+        display: block;;
     }
   }
   @media (max-width: 400px) {
