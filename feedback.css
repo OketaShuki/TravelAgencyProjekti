@@ -281,4 +281,40 @@ body {
     font-size: 14px;
     font-weight: 300;
 }
+@media (max-width: 768px) {
+  .footer-content-wrapper {
+      flex-direction: column; 
+      text-align: center; 
+  }
 
+  .footer-feedback, .footer-nav, .footer-contact {
+      margin: 10px 0; 
+      flex: none; 
+  }
+
+  .footer-title {
+      font-size: 20px; 
+  }
+
+  .footer-links a {
+      font-size: 14px; 
+  }
+
+  .footer-contact p {
+      font-size: 12px; 
+  }
+
+  .social-icons a img {
+      width: 25px; 
+  }
+
+  .footer-button {
+      font-size: 16px; 
+      padding: 10px 20px; 
+  }
+
+  .footer-copyright {
+      font-size: 12px; 
+      margin-top: 10px;
+  }
+}
