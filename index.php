@@ -27,7 +27,7 @@ session_start();
         <li><a href="rrethnesh.php">Rrethnesh</a></li>
         <li><a href="ofertat.php">Ofertat</a></li>
         <li><a href="contactus.php">Kontakti</a></li>
-        <li><a href="shembull.php">Shembull</a></li>
+        <li><a href="shembull.php">Destinacionet</a></li>
         <li><a href="login.php">Login</a></li>
         <li><a href="feedback.php">Feedback</a></li>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
@@ -43,6 +43,7 @@ session_start();
         <li class="hideOnMobile"><a href="contactus.php">Kontakti</a></li>
         <li class="hideOnMobile"><a href="shembull.php">Destinacionet</a></li>
         <li class="hideOnMobile"><a href="login.php">Login</a></li>
+        <li class="hideOnMobile"><a href="feedback.php">Feedback</a></li>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
         <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
         <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
@@ -166,8 +167,9 @@ session_start();
                         <a href="rrethnesh.php">Rreth Nesh</a>
                         <a href="ofertat.php">Ofertat</a>
                         <a href="contactus.php">Kontakti</a>
-                        <a href="shembull.php">Shembull</a>
+                        <a href="shembull.php">Destinacionet</a>
                         <a href="login.php">Log in/Register</a>
+                        <a href="feedback.php">Feedback</a>
                     </div>
                 </div>
                 <div class="footer-contact">
