@@ -299,6 +299,40 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
   margin-top: 50px;
 }
+.footer {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
+  margin-top: 50px;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact {
+  position: relative;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  align-self: flex-end; /* Pozicionon butonin në anën e djathtë */
+}
+
+.logout-btn:hover {
+  background-color: #e43f4e;
+}
+
+.footer-content {
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* responsiviteti i footer */
 
