@@ -178,7 +178,8 @@ z-index: 2;
 .btn:hover {
   background-color: #45a049;
 }
-/*footer*/
+/*     footer css  ====================================*/
+
 .footer-content{
   font-family: sans-serif;
   font-weight: 300;
@@ -216,11 +217,10 @@ z-index: 2;
 }
 
 .footer-nav{
+  position: relative;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-content: stretch;
+  flex-direction: column;
+  text-align: center;
 }
 
 .nav-titulli{
@@ -236,7 +236,7 @@ z-index: 2;
   align-content: stretch;
 }
 
-.nav-elements {
+.nav-elements{
   width: auto;
   cursor: pointer;
   font-family: sans-serif;
@@ -246,20 +246,17 @@ z-index: 2;
   justify-content: flex-start;
   align-items: baseline;
   align-content: stretch;
-  gap: 5px; /* Add some spacing between the links */
 }
 
-.nav-elements a {
-  line-height: 1.8em;
-  text-decoration: none;
-  color: rgb(162, 162, 162);
-  font-family: sans-serif;
-}
-
-.nav-elements a:hover {
+.nav-elements :hover{
   color: #ff4500;
 }
 
+.nav-elements>a{
+  line-height: 1.8em;
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+}
 
 .footer-contact{
   line-height: 1.8em;
@@ -288,42 +285,8 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
   margin-top: 50px;
 }
-.footer {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
-  margin-top: 50px;
-}
 
-.footer-div {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-contact {
-  position: relative;
-}
-
-.logout-btn {
-  padding: 10px 20px;
-  background-color: #ff4500;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  margin-top: 20px;
-  align-self: flex-end; /* Pozicionon butonin në anën e djathtë */
-}
-
-.logout-btn:hover {
-  background-color: #e43f4e;
-}
-
-.footer-content {
-  text-align: center;
-  margin-top: 20px;
-}
 /* Desktop */
-
 @media (max-width: 800px) {
   .hideOnMobile{
     display: none;

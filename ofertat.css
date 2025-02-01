@@ -194,7 +194,8 @@ body, html {
   padding: 0;
 }
   
-/*Stilizimi i footer */
+/*     footer css  ====================================*/
+
 .footer-content{
   font-family: sans-serif;
   font-weight: 300;
@@ -244,43 +245,43 @@ body, html {
   font-family: sans-serif;
   font-variant: small-caps;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
-.nav-elements {
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
-  gap: 5px; 
-}
-
-.nav-elements a {
-  line-height: 1.8em;
-  text-decoration: none;
-  color: rgb(162, 162, 162);
+.nav-elements{
+  width: auto;
+  cursor: pointer;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
-.nav-elements a:hover {
+.nav-elements :hover{
   color: #ff4500;
 }
 
+.nav-elements>a{
+  line-height: 1.8em;
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+}
 
 .footer-contact{
   line-height: 1.8em;
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: baseline;
-	align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: stretch;
 }
 
 .footer-contact>p, .fcontact-a>a{
@@ -297,50 +298,51 @@ body, html {
 }
 
 footer{
-  width: 100%;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
   margin-top: 50px;
 }
 
-
-/* responsiviteti i footer */
-
-@media (max-width: 750px) {
-  .footer-div {
-    flex-direction: column; /* Kalon në kolonë */
-    align-items: flex-start; /* Vendos elementët në të majtë */
-    padding: 20px; /* Hapësirë nga skajet */
-    gap: 20px; /* Hapësirë ndërmjet elementëve */
+/* Desktop */
+@media (max-width: 800px) {
+  .hideOnMobile{
+    display: none;
   }
-
-  .travel-footer, .footer-nav, .footer-contact {
-    width: 100%; /* Mbulojnë gjerësinë e ekranit */
-    margin-bottom: 15px; /* Hapësirë poshtë çdo seksioni */
+  .menu-button {
+    display: block;
   }
-
-  .travel-footer p, .footer-contact p, .nav-elements a {
-    text-align: left; /* Teksti i vendosur në të majtë */
   }
-
-  .nav-elements {
-    display: flex;
-    flex-direction: column; /* Elementët në kolonë për të qëndruar njëra poshtë tjetrës */
-    align-items: flex-start; /* Teksti i vendosur në të majtë */
-    
+  @media (max-width: 800px) {
+    .footer-div {
+      flex-direction: column; /* Kalon në kolonë */
+      align-items: flex-start; /* Vendos elementët në të majtë */
+      padding: 20px; /* Hapësirë nga skajet */
+      gap: 20px; /* Hapësirë ndërmjet elementëve */
+    }
+  
+    .travel-footer, .footer-nav, .footer-contact {
+      width: 100%; /* Mbulojnë gjerësinë e ekranit */
+      margin-bottom: 15px; /* Hapësirë poshtë çdo seksioni */
+    }
+  
+    .travel-footer p, .footer-contact p, .nav-elements a {
+      text-align: left; /* Teksti i vendosur në të majtë */
+    }
+  
+    .nav-elements {
+      display: flex;
+      flex-direction: column; /* Elementët në kolonë për të qëndruar njëra poshtë tjetrës */
+      align-items: flex-start; /* Teksti i vendosur në të majtë */
+      
+    }
+    .nav-titulli{
+      display: flex;
+      justify-content: flex-start;
+  
+    }
   }
-  .nav-titulli{
-    display: flex;
-    justify-content: flex-start;
-
+  
+  @media (max-width: 400px) {
+  .sidebar{
+    width: 100%;
   }
-}
-@media (min-width:1000px){
-  .box-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: stretch;
   }
-}

@@ -114,39 +114,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <footer>
-    <div class="footer-div">
-        <div class="travel-footer">
-            <h3 class="travel-titulli">MAJESTIC TRAVEL AGENCY</h3>
-            <p>Zgjedhja e Majestic Travel Agency <br>është vendimi ideal për ata që kërkojnë <br>
-                një përvojë udhëtimi të jashtëzakonshme, 
-                <br>të personalizuar dhe të sigurt.Ne jemi <br>të përkushtuar të ofrojmë shërbime të cilësisë <br>së lartë duke zgjedhur me kujdes destinacionet <br>
-                dhe paketat që përshtaten me çdo stil dhe buxhet. </p>
-        </div>
-        <div class="footer-nav">
-            <h3 class="nav-titulli">Faqet</h3>
-            <div class="nav-elements">
-                <a href="index.php">Home</a>
-                <a href="rrethnesh.php">Rreth Nesh</a>
-                <a href="ofertat.php">Ofertat</a>
-                <a href="contactus.php">Kontakti</a>
-                <a href="shembull.php">Destinacionet</a>
-                <a href="login.php">Log in/Register</a>
-                <a href="shtoFoto.php">JEP NJE FEEDBACK</a>
+        <div class="footer-div">
+            <div class="travel-footer">
+                <h3 class="travel-titulli">MAJESTIC TRAVEL AGENCY</h3>
+                <p>Discover our stunning beachfront apartments, <br>each offering breathtaking views of the ocean. <br>Our accommodations range from cozy studios <br> to spacious three-bedroom units, <br>catering to various preferences. </p>
+            </div>
+            <div class="footer-nav">
+                <h3 class="nav-titulli">Faqet</h3>
+                <div class="nav-elements">
+                    <a href="index.php">Home</a>
+                    <a href="rrethnesh.php">Rreth Nesh</a>
+                    <a href="ofertat.php">Ofertat</a>
+                    <a href="contactus.php">Kontakti</a>
+                    <a href="shembull.php">Destinacionet</a>
+                    <a href="login.php">Log in/Register</a>
+                    <a href="feedback.php">Feedback</a>
+                    <a href="logout.php">Log Out</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3 class="nav-titulli">Kontakti</h3>
+                <p>Kosove, Prishtine</p>
+                <p>Lagja NR, Str, 10000</p>
+                <p>majestictravel@gmail.com</p>
+                <p>+38349000111</p>
             </div>
         </div>
-        <div class="footer-contact">
-            <h3 class="nav-titulli">Kontakti</h3>
-            <p>Kosove, Prishtine</p>
-            <p>Lagja NR, Str, 10000</p>
-            <p>majestictravel@gmail.com</p>
-            <p>+38349000111</p>
-        </div>
-        <a href="logout.php">
-            <button class="logout-btn">Log Out</button>
-        </a>
-    </div>
-    <h5 class="footer-content">MAJESTIC TRAVEL All rights reserved</h5>
-</footer>
+        <h5 class="footer-content">MAJESTIC TRAVEL All rights reserved</h5>
+    </footer>
 
     <script src="contactus.js"></script>
 </body>
