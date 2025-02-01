@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="shtoFoto.css">
     <title>Shto nje Feedback</title>
 </head>
-<body>sh
-
+<body>
     <h2>Shto një review nga pushimet tuaja me agjencinë tonë:</h2>
     
     <form action="shtimiIFotos.php" method="post">
