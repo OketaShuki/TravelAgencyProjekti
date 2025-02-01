@@ -356,11 +356,36 @@
   color: #ff4500;
 }
 
-footer{
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
-  margin-top: 50px;
+.footer-button-container {
+  text-align: right; /* Ensures the button is aligned to the right */
+  margin-top: 20px;
 }
-.footer {
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #ff4500;
+}
+
+/* Ensuring the footer button stays at the bottom of the container */
+.footer-content {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); 
   margin-top: 50px;
 }
@@ -374,26 +399,13 @@ footer{
   position: relative;
 }
 
-.logout-btn {
-  padding: 10px 20px;
-  background-color: #ff4500;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  margin-top: 20px;
-  align-self: flex-end; /* Pozicionon butonin në anën e djathtë */
+@media (max-width: 800px) {
+  .footer-button-container {
+    text-align: center; /* Make button centered on mobile */
+    margin-top: 20px;
+  }
 }
 
-.logout-btn:hover {
-  background-color: #e43f4e;
-}
-
-.footer-content {
-  text-align: center;
-  margin-top: 20px;
-}
 
 @media (max-width: 800px) {
   .pershkrimet-container {
