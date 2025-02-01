@@ -1,6 +1,6 @@
 <?php
 include 'DatabaseConnection.php';
-
+session_start();
 $db = new DatabaseConnection();
 $conn = $db->startConnection();
 ?>
