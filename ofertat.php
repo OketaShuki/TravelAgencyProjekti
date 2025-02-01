@@ -33,6 +33,7 @@ session_start();
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
         <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
         <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
+        <li class="hideOnMobile"><a href="dashboardcontent.php">Contenti</a></li>
         <?php endif; ?>
     </ul> 
     <ul>
@@ -47,6 +48,7 @@ session_start();
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
         <li class="hideOnMobile"><a href="dashboard.php">Dashboard</a></li>
         <li class="hideOnMobile"><a href="nakontaktotabela.php">Mesazhet</a></li>
+        <li class="hideOnMobile"><a href="dashboardcontent.php">Contenti</a></li>
         <?php endif; ?>
         <li onclick=showSidebar()><a class="menu-button" href="#"><img src="fototprojekt/threebars.png" alt="threebars" height="80" width="80"></a></li>
     </ul>
