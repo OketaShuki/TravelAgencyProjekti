@@ -253,7 +253,6 @@
 .dot.active, .dot:hover {
   background-color: #717171;
 }
-
 /* Stilizimi i footer */
 .footer-content {
   font-family: sans-serif;
@@ -269,21 +268,21 @@
   padding-top: 40px;
   color: rgb(201, 201, 201);
   display: flex;
-  flex-direction: row; /* Ndryshimi për ta bërë horizontal */
-  justify-content: space-between; /* Hapësira ndërmjet elementëve */
-  gap: 20px; /* Hapësirë ndërmjet elementëve */
+  flex-direction: row; /* Të gjitha elementet të jenë horizontale */
+  justify-content: center; /* Centralizoni përmbajtjen horizontalisht */
+  gap: 30px; /* Hapësirë ndërmjet elementeve */
+  text-align: center; /* Siguron që teksti të jetë gjithashtu në qendër */
 }
 
-.travel-footer {
-  position: relative;
+.travel-footer, .footer-nav, .footer-contact {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  font-style: italic;
-  color: rgb(162, 162, 162);
+  justify-content: center; /* Centralizoni përmbajtjen brenda secilit div */
+  align-items: center; /* Centralizoni përmbajtjen brenda secilit div */
+  text-align: center;
 }
 
-.travel-titulli {
+.travel-titulli, .nav-titulli {
   padding-bottom: 5px;
   font-style: normal;
   color: #ff4500;
@@ -291,30 +290,11 @@
   font-variant: small-caps;
 }
 
-.footer-nav {
-  position: relative;
+.footer-nav .nav-elements {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.nav-titulli {
-  color: #ff4500;
-  padding-bottom: 5px;
-  font-family: sans-serif;
-  font-variant: small-caps;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: center;
-}
-
-.nav-elements {
-  display: flex;
-  flex-direction: column; /* Rregulloje në kolonë për pajisje të vogla */
+  flex-direction: column; /* Rregullon linket në kolonë */
   gap: 5px;
+  text-align: center; /* Centralizimi i elementeve */
 }
 
 .nav-elements a {
@@ -332,10 +312,8 @@
   line-height: 1.8em;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-contact > p, .fcontact-a > a {
@@ -352,7 +330,7 @@
 }
 
 .footer-button-container {
-  text-align: right; /* Siguron që butoni është në të djathtë */
+  text-align: center; /* Centralizoni butonin */
   margin-top: 20px;
 }
 
@@ -388,6 +366,8 @@ footer {
 .footer-div {
   display: flex;
   flex-direction: row; /* Të gjitha elementet të jenë horizontale */
+  justify-content: center; /* Centralizoni përmbajtjen horizontalisht */
+  gap: 20px; /* Hapësirë ndërmjet elementeve */
 }
 
 .footer-contact {
@@ -397,7 +377,7 @@ footer {
 @media (max-width: 800px) {
   .footer-div {
     flex-direction: row; /* Mbajmë horizontale për pajisje më të vogla */
-    justify-content: space-between; /* Largimi i elementeve ndërmjet tyre */
+    justify-content: center; /* Centralizoni përmbajtjen */
     padding: 20px;
     gap: 20px;
   }
