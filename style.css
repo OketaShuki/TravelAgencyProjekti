@@ -269,7 +269,7 @@
   color: rgb(201, 201, 201);
   display: flex;
   flex-direction: row; /* Të gjitha elementet të jenë horizontale */
-  justify-content: center; /* Centralizoni përmbajtjen horizontalisht */
+  justify-content: space-between; /* Hapësirë mes elementeve (majtas, qendra, djathtas) */
   gap: 30px; /* Hapësirë ndërmjet elementeve */
   text-align: center; /* Siguron që teksti të jetë gjithashtu në qendër */
 }
@@ -281,6 +281,7 @@
   align-items: center; /* Centralizoni përmbajtjen brenda secilit div */
   text-align: center;
 }
+
 
 .travel-titulli, .nav-titulli {
   padding-bottom: 5px;
