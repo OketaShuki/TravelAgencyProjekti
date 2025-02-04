@@ -1,4 +1,4 @@
-/* General Body Styles */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -7,14 +7,14 @@ body {
   color: #333;
 }
 
-/* Header Styles */
+
 h2 {
   color: #ff6600;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Table Styles */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -23,7 +23,7 @@ table {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Header Styles */
+
 th, td {
   padding: 12px 15px;
   border: 1px solid #ddd;
@@ -31,19 +31,19 @@ th, td {
   font-size: 16px;
 }
 
-/* Table Header Specific Styling */
+
 th {
   background-color: #ff6600;
   color: white;
   font-weight: bold;
 }
 
-/* Table Row Hover Effect */
+
 tr:hover {
   background-color: #f2f2f2;
 }
 
-/* Link (Delete) Styling */
+
 a {
   color: #ff6600;
   text-decoration: none;
@@ -51,15 +51,15 @@ a {
 }
 
 a:hover {
-  color: #cc5200; /* Darker shade on hover */
+  color: #cc5200; 
 }
 
-/* Table Row Styles */
+
 td {
   color: #333;
 }
 
-/* Column Width */
+
 td:nth-child(1), th:nth-child(1) {
   width: 5%;
 }
@@ -84,14 +84,14 @@ td:nth-child(6), th:nth-child(6) {
   width: 15%;
 }
 
-/* General Margin and Padding */
+
 table, h2 {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
 }
 
-/* Styling for Empty States (if no data) */
+
 table.empty {
   text-align: center;
   font-style: italic;

@@ -4,7 +4,7 @@ include_once 'userRepository.php';
 $userRepository = new UserRepository();
 $users = $userRepository->getAllUsers();
 
-// Separate users by role
+// i ndan userat supas rolit
 $admins = array_filter($users, function ($user) {
     return $user['role'] === 'admin';
 });

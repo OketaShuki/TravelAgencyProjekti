@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white; /* background color of register */
+  background-color: white; 
   color: #333;
   line-height: 1.6;
 }
@@ -96,7 +96,7 @@ nav li:last-child a:hover {
       width: 100%;
   }
 }
-/*             heAader                        */
+
 
 .body3 {
   display: flex;
@@ -218,7 +218,7 @@ width: 20px;
 height: 20px;
 }
 
-/* Make sure labels are visible and styled properly */
+
 .roles label {
 font-size: 16px;
 cursor: pointer;
@@ -227,12 +227,12 @@ font-weight: normal;
 margin-left: 5px;
 }
 
-/* Add hover effect */
+
 .roles label:hover {
 color: #ff6600;
 }
 
-/* Style for checked radio button */
+
 .roles input[type="radio"]:checked + label {
 font-weight: bold;
 color: #ff6600;

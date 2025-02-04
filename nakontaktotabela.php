@@ -1,10 +1,10 @@
 <?php
-include_once 'contactRepository.php'; // Make sure this path is correct
+include_once 'contactRepository.php'; 
 
-// Create a new instance of the contactRepository
+
 $contactRepository = new contactRepository();
 
-// Fetch all the contacts
+
 $generalMessages = $contactRepository->getAllContacts();
 ?>
 
@@ -26,7 +26,7 @@ $generalMessages = $contactRepository->getAllContacts();
             <th>Email</th>
             <th>Titulli</th>
             <th>Mesazhi</th>
-            <th>Delete</th> <!-- Add this column for delete -->
+            <th>Delete</th> 
         </tr>
         <?php
         if (!empty($generalMessages)) {

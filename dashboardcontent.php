@@ -1,9 +1,8 @@
 <?php
-include_once 'contentRepository.php';
+include_once 'ContentRepository.php';
 
 $contentRepository = new ContentRepository();
 $contents = $contentRepository->getAllContent();
-
 ?>
 
 <!DOCTYPE html>
@@ -21,12 +20,13 @@ $contents = $contentRepository->getAllContent();
             <th>ID</th>
             <th>Title</th>
             <th>Description</th>
-            <th>Image Path</th>
+            <th>Image</th>
             <th>Created By</th>
             <th>Modified By</th>
             <th>Created At</th>
             <th>Updated At</th>
             <th>Edit</th>
+            <th>Delete</th>
         </tr>
         <?php
         foreach ($contents as $content) {
@@ -41,6 +41,7 @@ $contents = $contentRepository->getAllContent();
                    <td>{$content['created_at']}</td>
                    <td>{$content['updated_at']}</td>
                    <td><a href='editcontent.php?id={$content['id']}'>Edit</a></td>
+                   <td><a href='deletecontent.php?id={$content['id']}' onclick='return confirm(\"A jeni i sigurt që doni të fshini këtë?\")'>Delete</a></td>
                </tr>
                ";
         }

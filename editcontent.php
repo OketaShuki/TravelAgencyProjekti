@@ -5,14 +5,14 @@ include 'DatabaseConnection.php';
 $db = new DatabaseConnection();
 $conn = $db->startConnection();
 
-// Ensure a valid ID is passed
+
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     die("Error: Invalid content ID.");
 }
 
 $contentId = $_GET['id'];
 
-// Fetch the current content details
+
 $stmt = $conn->prepare("SELECT * FROM content WHERE id = :id");
 $stmt->bindParam(':id', $contentId);
 $stmt->execute();

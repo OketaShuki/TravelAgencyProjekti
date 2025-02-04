@@ -10,7 +10,7 @@ class contactRepository {
         $this->connection = $conn->startConnection();
     }
 
-    // Insert a new contact
+
     public function insertContact($contact){
         $conn = $this->connection;
 
@@ -32,7 +32,7 @@ class contactRepository {
         }
     }
 
-    // Get all contacts
+    
     public function getAllContacts(){
         $conn = $this->connection;
         $sql = "SELECT id, emri, email, titulli, mesazhi FROM contactus";
@@ -43,7 +43,7 @@ class contactRepository {
     
             return $contacts;
         } catch (PDOException $e) {
-            echo "SQL Error: " . $e->getMessage(); // Show SQL error if query fails
+            echo "SQL Error: " . $e->getMessage(); 
             return [];
         }
     }

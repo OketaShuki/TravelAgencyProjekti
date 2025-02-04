@@ -2,26 +2,26 @@
 session_start();
 
 // Database connection
-include('DatabaseConnection.php');  // Assuming you have this file for DB connection
+include('DatabaseConnection.php'); 
 
-// Create a new instance of DatabaseConnection
+//krijimi i nje instance te databazes
 $db = new DatabaseConnection();
 $conn = $db->startConnection();
 
-// Process form submission
+// forma
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['emri'], $_POST['email'], $_POST['titulli'], $_POST['mesazhi'])) {
-        // Sanitize the input data to prevent SQL injection or malformed data
+        
         $emri = htmlspecialchars(trim($_POST['emri']));
         $email = htmlspecialchars(trim($_POST['email']));
         $titulli = htmlspecialchars(trim($_POST['titulli']));
         $mesazhi = htmlspecialchars(trim($_POST['mesazhi']));
 
-        // Prepare SQL query to insert contact message into the database
+        //per me insertu mesazhet dmth te gjithe kolonat
         $query = "INSERT INTO contactus (emri, email, titulli, mesazhi) VALUES (:emri, :email, :titulli, :mesazhi)";
         $stmt = $conn->prepare($query);
 
-        // Bind parameters
+        //parametrat
         $stmt->bindParam(':emri', $emri);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':titulli', $titulli);

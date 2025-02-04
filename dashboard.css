@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Header Styles */
+
 h2 {
   color: #ff6600;
   text-align: center;
@@ -15,7 +15,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* Table Styles */
+
 table {
   width: 90%;
   margin: 20px auto;
@@ -49,7 +49,7 @@ tr:hover {
   background-color: #ffe6cc;
 }
 
-/* Link Styles */
+
 a {
   color: #ff6600;
   text-decoration: none;
@@ -60,7 +60,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Button Styles (optional for edit/delete links) */
+
 button {
   background-color: #ff6600;
   color: #fff;

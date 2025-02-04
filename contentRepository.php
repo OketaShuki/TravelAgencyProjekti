@@ -15,5 +15,10 @@ class ContentRepository {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function deleteContent($id) {
+        $sql = "DELETE FROM content WHERE id = ?";
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([$id]);
+    }
 }
 ?>

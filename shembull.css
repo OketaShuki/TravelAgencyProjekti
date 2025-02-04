@@ -117,7 +117,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3); /* Orange shadow */
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3); 
   width: 30%;
   min-width: 200px;
   text-align: center;
@@ -125,23 +125,23 @@
   transition: transform 0.3s ease; 
 }
 a.detail {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Keeps the text color consistent */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 
 
 .detail:hover {
-  transform: scale(1.05); /* Slightly scales up on hover */
-  box-shadow: #ff4500 /* Darker orange shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: #ff4500 
 }
 
 .contact-boxes {
     display: flex;
     gap: 20px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 20px; /* Optional padding for spacing */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
 }
 
 
@@ -179,18 +179,18 @@ a.detail {
     color: #777;
 }
 .detail {
-  position: relative; /* Allows positioning of the image */
-  padding-left: 50px; /* Add padding to the left for image space */
+  position: relative; 
+  padding-left: 50px; 
 }
 
 .detail-image {
   position: absolute;
-  left: 10px; /* Adjust as needed */
-  top: 30px; /* Adjust as needed */
-  width: 50px; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
+  left: 10px; 
+  top: 30px; 
+  width: 50px; 
+  height: auto; 
 }
-  /* end of main styling*/
+  
 
 
 /*     footer css  ====================================*/
